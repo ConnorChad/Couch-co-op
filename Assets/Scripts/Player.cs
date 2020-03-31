@@ -131,5 +131,10 @@ public class Player : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
+
+        if (other.CompareTag("GameEnd"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
